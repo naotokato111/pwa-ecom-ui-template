@@ -24,6 +24,8 @@ export function useSearchInsights({
       useCookie: true,
     })
 
+
+    
     if (typeof setUserToken === 'function') {
       searchInsights('getUserToken', null, (_, generatedUserToken) => {
         setUserToken(generatedUserToken, (userToken) => {

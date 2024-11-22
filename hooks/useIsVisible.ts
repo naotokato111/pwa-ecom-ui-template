@@ -22,6 +22,8 @@ export function useIsVisible(initialIsVisible = false) {
     }
   }, [isEscapePressed])
 
+
+  
   useEventListener(isomorphicDocument, 'click', handleClickOutside)
 
   return { ref, isVisible, setIsVisible }

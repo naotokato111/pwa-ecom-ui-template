@@ -13,7 +13,9 @@ export function useDeepUpdateAtom<TValue, TUpdate>(
   const [currentAtomValue, _setAtomValue] = useAtom(anAtom, scope)
 
   const currentAtomValueRef = useRef(currentAtomValue)
+ 
 
+  
   useEffect(() => {
     currentAtomValueRef.current = currentAtomValue
   }, [currentAtomValue])

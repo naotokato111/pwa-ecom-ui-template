@@ -22,7 +22,9 @@ export function useDebouncedCallback<T extends any[]>(
       function debouncedCallback(...args: T) {
         argsRef.current = args
 
+        
         cleanup()
+
 
         timeout.current = setTimeout(() => {
           if (argsRef.current) {

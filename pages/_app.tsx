@@ -27,6 +27,9 @@ export const Header = dynamic<HeaderProps>(() =>
   )
 )
 
+
+
+
 export const Footer = dynamic<FooterProps>(() =>
   import(/* webpackChunkName: 'common' */ '@/components/footer/footer').then(
     (mod) => mod.Footer

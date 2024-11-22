@@ -26,6 +26,8 @@ export type ProductHit = {
     on_sales: boolean
     value: number
   }
+
+  
   related_products: ProductHit[] | null
   reviews: {
     bayesian_avg: number
