@@ -15,6 +15,8 @@ export type AppLayoutProps = {
   children: React.ReactNode
 }
 
+
+
 const loadFramerMotionFeatures = () =>
   import(/* webpackChunkName: 'lib' */ '@/lib/framer-motion-features').then(
     (mod) => mod.default
