@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          
           {/* Common meta */}
           <meta name="description" content="Shop the latest fashion online" />
           <meta name="application-name" content="Spencer and Williams" />

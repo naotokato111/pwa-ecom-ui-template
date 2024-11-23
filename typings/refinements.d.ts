@@ -14,6 +14,7 @@ export type RefinementWidget = {
   options: RefinementOptions
 }
 
+
 export type Refinement = {
   type?: RefinementType
   header: string

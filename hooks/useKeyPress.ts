@@ -24,7 +24,6 @@ export function useKeyPress(targetKey: string): boolean {
     },
     [targetKey]
   )
-
   useEventListener(isomorphicWindow, 'keydown', downHandler)
   useEventListener(isomorphicWindow, 'keyup', upHandler)
 
